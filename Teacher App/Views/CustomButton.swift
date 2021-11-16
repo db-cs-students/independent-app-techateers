@@ -8,17 +8,18 @@
 import SwiftUI
 
 struct CustomButton: View {
+    let width: CGFloat
+    let height: CGFloat
     var body: some View {
         Button(action: {}) {
             ZStack {
-                RoundedRectangle(cornerRadius: 5, style: .continuous)
-                    .frame(width: 230, height: 30, alignment: .center)
-                    .padding(6)
+                RoundedRectangle(cornerRadius: 4, style: .continuous)
+                    .frame(width: width + 5, height: height + 5, alignment: .center)
+                    .foregroundColor(.black)
+                RoundedRectangle(cornerRadius: 4, style: .continuous)
+                    .frame(width: width, height: height, alignment: .center)
                     .foregroundColor(.yellow)
-                    .clipShape(Capsule(), style: /*@START_MENU_TOKEN@*/FillStyle()/*@END_MENU_TOKEN@*/)
-                    .background(Color(.black))
-                    .cornerRadius(10)
-                Text("I am a Button :)")
+                Text("I am a button :)")
                     .foregroundColor(.black)
                     
                     
@@ -32,6 +33,6 @@ struct CustomButton: View {
 
 struct CustomButton_Previews: PreviewProvider {
     static var previews: some View {
-        CustomButton()
+        CustomButton(width: 230, height: 30)
     }
 }
