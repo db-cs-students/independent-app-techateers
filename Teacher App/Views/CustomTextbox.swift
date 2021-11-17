@@ -9,7 +9,13 @@ import SwiftUI
 
 struct CustomTextbox: View {
     var body: some View {
-        Text("Hello Cameron")
+        ZStack {
+            TextField("Placeholder", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding(5)
+                .background(Color.pink)
+                .foregroundColor(.black)
+        }
     }
 }
 
