@@ -28,6 +28,6 @@ struct CustomLeaderboard: View {
 
 struct CustomLeaderboard_Previews: PreviewProvider {
     static var previews: some View {
-        CustomLeaderboard(Cname:"A Block", Studentlist: ["Jimmy","John","Jake","Jason","cameron"])
+        CustomLeaderboard(Cname:"A Block", Studentlist: ["Jimmy","John","Jake","Jason","cameron"`])
     }
 }
