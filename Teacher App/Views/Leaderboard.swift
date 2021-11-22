@@ -10,27 +10,24 @@ import SwiftUI
 
 
 struct CustomLeaderboard: View {
+    @State var Cname:String
+    @State var Studentlist: [String]
     var body: some View {
         NavigationView {
             List {
-                Text("Student Name")
-                Text("Student Name")
-                Text("Student Name")
-                Text("Student Name")
-                Text("Student Name")
-                Text("Student Name")
-                Text("Student Name")
-                Text("Student Name")
-                Text("Student Name")
-                Text("Student Name")
+                ForEach(Studentlist , id: \.self) { student in
+                    HStack{
+                        Text(student)
+                    }
+                }
             }
-            .navigationTitle("LeaderBoard")
+            .navigationTitle(Cname)
         }
     }
 }
 
 struct CustomLeaderboard_Previews: PreviewProvider {
     static var previews: some View {
-        CustomLeaderboard()
+        CustomLeaderboard(Cname:"A Block", Studentlist: ["Jimmy","John","Jake","Jason","cameron"])
     }
 }
