@@ -11,6 +11,7 @@ import SwiftUI
 ///
 ///
 struct CustomButton: View {
+    let name: String
     let width: CGFloat
     let height: CGFloat
     var body: some View {
@@ -22,7 +23,7 @@ struct CustomButton: View {
                 RoundedRectangle(cornerRadius: 4, style: .continuous)
                     .frame(width: width, height: height, alignment: .center)
                     .foregroundColor(.yellow)
-                Text("jake")
+                Text(name)
                     .foregroundColor(.black)
             }
         }
@@ -31,7 +32,7 @@ struct CustomButton: View {
 
 struct CustomButton_Previews: PreviewProvider {
     static var previews: some View {
-        CustomButton(width: 230, height: 30)
+        CustomButton(name: "button", width: 230, height: 30)
 // add default peramiters 
     }
 }

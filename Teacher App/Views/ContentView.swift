@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        CustomButton(name: "jake", width: 33, height: 41)
             .padding()
     }
 }
