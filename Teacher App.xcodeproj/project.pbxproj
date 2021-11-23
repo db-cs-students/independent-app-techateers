@@ -11,6 +11,7 @@
 		3D015670273ED36300790E16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D01566F273ED36300790E16 /* ContentView.swift */; };
 		3D015672273ED36500790E16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D015671273ED36500790E16 /* Assets.xcassets */; };
 		3D015675273ED36500790E16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D015674273ED36500790E16 /* Preview Assets.xcassets */; };
+		3DF59ECA274D64A900E56C9F /* CustomTextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF59EC9274D64A900E56C9F /* CustomTextBox.swift */; };
 		3DFF9D2D2742C77A00262FC2 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFF9D2C2742C77A00262FC2 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +22,7 @@
 		3D015671273ED36500790E16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D015674273ED36500790E16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3D015676273ED36500790E16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DF59EC9274D64A900E56C9F /* CustomTextBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomTextBox.swift; path = ../../CustomTextBox.swift; sourceTree = "<group>"; };
 		3DFF9D2C2742C77A00262FC2 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +76,7 @@
 		3D150CA7273ED9AB00C51128 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3DF59EC9274D64A900E56C9F /* CustomTextBox.swift */,
 				3D01566F273ED36300790E16 /* ContentView.swift */,
 				3DFF9D2C2742C77A00262FC2 /* CustomButton.swift */,
 			);
@@ -152,6 +155,7 @@
 				3D015670273ED36300790E16 /* ContentView.swift in Sources */,
 				3D01566E273ED36300790E16 /* Teacher_AppApp.swift in Sources */,
 				3DFF9D2D2742C77A00262FC2 /* CustomButton.swift in Sources */,
+				3DF59ECA274D64A900E56C9F /* CustomTextBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
