@@ -8,19 +8,22 @@
 import SwiftUI
 
 struct CustomTextbox: View {
+    @State var text: String
+    
     var body: some View {
         ZStack {
-            TextField("Placeholder", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+            RoundedRectangle(cornerRadius: 4, style: .continuous)
+                .frame(width: 10, height: 15, alignment: .center)
+                .foregroundColor(.black)
+            TextField("Placeholder", text: $text)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding(5)
-                .background(Color.pink)
-                .foregroundColor(.black)
         }
     }
 }
 
 struct CustomTextbox_Previews: PreviewProvider {
     static var previews: some View {
-        CustomTextbox()
+        CustomTextbox(text: "")
     }
 }
