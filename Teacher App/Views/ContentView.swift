@@ -9,8 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        CustomButton(name: "jake", width: 33, height: 41)
+        CustomButton(name: "login", width: 100, height: 40)
             .padding()
+            .position(x: 150, y: 350)
     }
 }
 
