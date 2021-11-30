@@ -14,17 +14,19 @@ struct CustomButton: View {
     let name: String
     let width: CGFloat
     let height: CGFloat
+    var color: Color
+    var secondaryColor: Color
     var body: some View {
         Button(action: {}) {
             ZStack {
                 RoundedRectangle(cornerRadius: 4, style: .continuous)
                     .frame(width: width + 5, height: height + 5, alignment: .center)
-                    .foregroundColor(.black)
+                    .foregroundColor(secondaryColor)
                 RoundedRectangle(cornerRadius: 4, style: .continuous)
                     .frame(width: width, height: height, alignment: .center)
-                    .foregroundColor(.yellow)
+                    .foregroundColor(color)
                 Text(name)
-                    .foregroundColor(.black)
+                    .foregroundColor(secondaryColor)
             }
         }
     }
@@ -32,7 +34,7 @@ struct CustomButton: View {
 
 struct CustomButton_Previews: PreviewProvider {
     static var previews: some View {
-        CustomButton(name: "button", width: 230, height: 30)
+        CustomButton(name: "button", width: 230, height: 30, color: .green, secondaryColor: .black)
 // add default peramiters 
     }
 }
