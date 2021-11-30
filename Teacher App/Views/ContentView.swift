@@ -19,7 +19,13 @@ struct ContentView: View {
                 .padding(.bottom, 20)
             Spacer()
             CustomButton(name: "Login", width: 100, height: 40, img: "")
-                .padding(.bottom, 350.0)
+                .padding(.bottom, 10)
+            Spacer()
+            CustomButton(name: "Login With Google", width: 200, height: 40, img: "")
+                .padding(.bottom, 10)
+            Spacer()
+            CustomButton(name: "Login With Apple", width: 200, height: 40, img: "")
+                .padding(.bottom, 300.0)
         }
 
     }
