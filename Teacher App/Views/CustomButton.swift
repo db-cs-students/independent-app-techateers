@@ -7,9 +7,14 @@
 
 import SwiftUI
 
+///
+///
+///
 struct CustomButton: View {
+    let name: String
     let width: CGFloat
     let height: CGFloat
+    let img: String
     var body: some View {
         Button(action: {}) {
             ZStack {
@@ -19,20 +24,19 @@ struct CustomButton: View {
                 RoundedRectangle(cornerRadius: 4, style: .continuous)
                     .frame(width: width, height: height, alignment: .center)
                     .foregroundColor(.yellow)
-                Text("I am a button :)")
+                ZStack {
+                    Image(img)
+                    Text(name)
+                }
                     .foregroundColor(.black)
-                    
-                    
             }
-            
-            
         }
-        
     }
 }
 
 struct CustomButton_Previews: PreviewProvider {
     static var previews: some View {
-        CustomButton(width: 230, height: 30)
+        CustomButton(name: "button", width: 230, height: 35, img: "star.fill")
+// add default peramiters 
     }
 }
