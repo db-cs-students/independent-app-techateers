@@ -24,7 +24,7 @@ struct CustomButton: View {
                 RoundedRectangle(cornerRadius: 4, style: .continuous)
                     .frame(width: width, height: height, alignment: .center)
                     .foregroundColor(.yellow)
-                VStack {
+                ZStack {
                     Image(img)
                     Text(name)
                 }

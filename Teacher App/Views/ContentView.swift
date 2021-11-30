@@ -11,10 +11,15 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Spacer()
-            CustomTextbox(placeholder: "username", width: 200, height: 40, text: .constant(""))
+            CustomTextbox(placeholder: "Username", width: 200, height: 50, text: .constant(""))
+                .padding(.top, 300)
+                .padding(.bottom, 10)
             Spacer()
-            CustomButton(name: "login", width: 100, height: 40, img: "")
-                .padding(.bottom, 200.0)
+            CustomTextbox(placeholder: "Password", width: 200, height: 50, text: .constant(""))
+                .padding(.bottom, 20)
+            Spacer()
+            CustomButton(name: "Login", width: 100, height: 40, img: "")
+                .padding(.bottom, 350.0)
         }
 
     }

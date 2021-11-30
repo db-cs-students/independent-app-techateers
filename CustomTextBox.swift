@@ -26,6 +26,6 @@ struct CustomTextbox: View {
 
 struct CustomTextbox_Previews: PreviewProvider {
     static var previews: some View {
-        CustomTextbox(placeholder: "A String", width: 90, height: 100, text: .constant("") )
+        CustomTextbox(placeholder: "A String", width: 200, height: 40, text: .constant("") )
     }
 }
