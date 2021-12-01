@@ -18,7 +18,7 @@ struct ContentView: View {
             CustomTextbox(placeholder: "Password", width: 200, height: 50, text: .constant(""))
                 .padding(.bottom, 20)
             Spacer()
-            CustomButton(name: "Login", width: 100, height: 40, img: "")
+            CustomButton(name: "Login", width: 100, height: 40, color: .green, secondaryColor: .black)
                 .padding(.bottom, 350.0)
         }
 
