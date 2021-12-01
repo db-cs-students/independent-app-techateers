@@ -15,6 +15,21 @@ struct CustomButton: View {
     let width: CGFloat
     let height: CGFloat
     let img: String
+    
+    init(name: String, width: CGFloat, height: CGFloat) {
+        self.name = name
+        self.width = width
+        self.height = height
+        img = ""
+    }
+    
+    init(name: String, width: CGFloat, height: CGFloat, img: String) {
+        self.name = name
+        self.width = width
+        self.height = height
+        self.img = img
+    }
+    
     var body: some View {
         Button(action: {}) {
             ZStack {
@@ -24,8 +39,14 @@ struct CustomButton: View {
                 RoundedRectangle(cornerRadius: 4, style: .continuous)
                     .frame(width: width, height: height, alignment: .center)
                     .foregroundColor(.yellow)
-                ZStack {
-                    Image(img)
+                VStack {
+                    Group {
+                        if img.isEmpty {
+                            EmptyView()
+                        } else {
+                            Image(systemName: img)
+                        }
+                    }
                     Text(name)
                 }
                     .foregroundColor(.black)
@@ -36,7 +57,8 @@ struct CustomButton: View {
 
 struct CustomButton_Previews: PreviewProvider {
     static var previews: some View {
-        CustomButton(name: "button", width: 230, height: 35, img: "star.fill")
+        CustomButton(name: "button", width: 65, height: 55, img: "star.fill")
+        CustomButton(name: "button", width: 65, height: 55)
 // add default peramiters 
     }
 }
