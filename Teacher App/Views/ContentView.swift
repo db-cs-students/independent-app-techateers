@@ -8,23 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var username: String = ""
+    @State var password: String = ""
+    
     var body: some View {
         VStack {
-            Spacer()
-            CustomTextbox(placeholder: "Username", width: 200, height: 50, text: .constant(""))
+            CustomTextbox(placeholder: "Username", width: 200, height: 50, text: $username)
                 .padding(.top, 300)
                 .padding(.bottom, 10)
-            Spacer()
-            CustomTextbox(placeholder: "Password", width: 200, height: 50, text: .constant(""))
+            CustomTextbox(placeholder: "Password", width: 200, height: 50, text: $password)
                 .padding(.bottom, 20)
-            Spacer()
-            CustomButton(name: "Login", width: 100, height: 40, img: "")
+
+            CustomButton(name: "Login", width: 100, height: 40, color: .red, secondaryColor: .blue)
                 .padding(.bottom, 10)
-            Spacer()
-            CustomButton(name: "Login With Google", width: 200, height: 40, img: "")
+            
+            CustomButton(name: "Login With Google", width: 200, height: 40, color: .blue, secondaryColor: .red)
                 .padding(.bottom, 10)
-            Spacer()
-            CustomButton(name: "Login With Apple", width: 200, height: 40, img: "")
+            
+            CustomButton(name: "Login With Apple", width: 200, height: 40, color: .blue, secondaryColor: .red)
                 .padding(.bottom, 300.0)
         }
 
