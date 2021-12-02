@@ -9,19 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Spacer()
-            CustomTextbox(placeholder: "Username", width: 200, height: 50, text: .constant(""))
-                .padding(.top, 300)
-                .padding(.bottom, 10)
-            Spacer()
-            CustomTextbox(placeholder: "Password", width: 200, height: 50, text: .constant(""))
-                .padding(.bottom, 20)
-            Spacer()
-            CustomButton(name: "Login", width: 100, height: 40, img: "")
-                .padding(.bottom, 350.0)
-        }
-
+        CustomButton(name: "Hello", width: 200, height: 100, color: .blue, secondaryColor: .green)
+            .padding()
     }
 }
 
