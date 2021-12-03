@@ -13,7 +13,7 @@ struct editGame: View {
             CustomButton(name: "Class Management", width: 225, height: 85, color: .red, secondaryColor: .blue)
             CustomButton(name: "Create Class", width: 125, height: 50, color: .red, secondaryColor: .blue)
                 .padding()
-            CustomLeaderboard(cname:"A Block", studentlist: ["math","science","literacy","Mr. Bailey's class","Sleep time"])
+            CustomLeaderboard(cname:"A Block", studentlist: ["hel;p", "die", "james", "jenna", "ethan"])
         }
 
     }
