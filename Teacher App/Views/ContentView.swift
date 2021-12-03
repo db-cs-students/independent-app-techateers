@@ -4,9 +4,9 @@
 //
 //  Created by Sam L on 11/12/21.
 //
-
+ 
 import SwiftUI
-
+ 
 struct ContentView: View {
     @State var username: String = ""
     @State var password: String = ""
@@ -18,7 +18,7 @@ struct ContentView: View {
 //                .padding(.bottom, 10)
             CustomTextbox(placeholder: "Password", width: 200, height: 50, text: $password)
 //                .padding(.bottom, 20)
-
+ 
             CustomButton(name: "Login", width: 100, height: 40, color: .red, secondaryColor: .blue)
 //                .padding(.bottom, 10)
             
@@ -28,12 +28,13 @@ struct ContentView: View {
             CustomButton(name: "Login With Apple", width: 200, height: 40, color: .blue, secondaryColor: .red)
 //                .padding(.bottom, 300.0)
         }
-
+ 
     }
 }
-
+ 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+
