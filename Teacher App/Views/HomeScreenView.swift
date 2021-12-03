@@ -11,6 +11,7 @@ struct HomeScreenView: View {
     var body: some View {
         NavigationView {
             VStack{
+                Text("Favorite Quizes")
                 ScrollView(.horizontal){
                     HStack(spacing: 10) {
                         CustomButton(name: "Liner Equation", width: 110, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
@@ -20,21 +21,17 @@ struct HomeScreenView: View {
                     }
                 }
                 .padding()
+                Text("Classes")
                 ScrollView(.horizontal){
-                    HStack(spacing: 15) {
-                        CustomButton(name: "Liner Eqiution", width: 100, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
-                        CustomButton(name: "Liner Eqiution", width: 100, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
-                        CustomButton(name: "Liner Eqiution", width: 100, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
-                        CustomButton(name: "Liner Eqiution", width: 100, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
+                    HStack(spacing: 10) {
                         CustomButton(name: "Liner Eqiution", width: 100, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
                         CustomButton(name: "Liner Eqiution", width: 100, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
                         CustomButton(name: "Liner Eqiution", width: 100, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
                     }
                 }
                 .padding()
-                Spacer()
+                CustomLeaderboard()
             }
-            
         }
     }
 }
