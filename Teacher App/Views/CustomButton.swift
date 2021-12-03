@@ -18,7 +18,7 @@ struct CustomButton: View {
     let secondaryColor: Color
     let img: String
     
-    init(name: String, width: CGFloat, height: CGFloat) {
+    init(name: String, width: CGFloat, height: CGFloat, color: Color, secondaryColor: Color) {
         self.name = name
         self.width = width
         self.height = height
@@ -27,13 +27,15 @@ struct CustomButton: View {
         img = ""
     }
     
-    init(name: String, width: CGFloat, height: CGFloat, img: String) {
+    init(name: String, width: CGFloat, height: CGFloat, color: Color, secondaryColor: Color, img: String) {
+        self.color = color
+        self.secondaryColor = secondaryColor
         self.name = name
         self.width = width
         self.height = height
         self.img = img
     }
-    
+
     var body: some View {
         Button(action: {}) {
             ZStack {
@@ -42,7 +44,7 @@ struct CustomButton: View {
                     .foregroundColor(secondaryColor)
                 RoundedRectangle(cornerRadius: 4, style: .continuous)
                     .frame(width: width, height: height, alignment: .center)
-                    .foregroundColor(.yellow)
+                    .foregroundColor(color)
                 VStack {
                     Group {
                         if img.isEmpty {
@@ -60,8 +62,6 @@ struct CustomButton: View {
 
 struct CustomButton_Previews: PreviewProvider {
     static var previews: some View {
-        CustomButton(name: "button", width: 65, height: 55, img: "star.fill")
-        CustomButton(name: "button", width: 65, height: 55)
-// add default peramiters 
+        CustomButton(name: "game", width: 100, height: 100, color: .blue, secondaryColor: .green, img: "gamecontroller")
     }
 }

@@ -13,21 +13,22 @@ struct HomeScreenView: View {
             VStack{
                 ScrollView(.horizontal){
                     HStack(spacing: 10) {
-                        CustomButton(name: "linear equations", width: 150, height: 100, img: "gamecontroller")
-                        CustomButton(name: "linear equations", width: 150, height: 100, img: "gamecontroller")
-                        CustomButton(name: "linear equations", width: 150, height: 100, img: "gamecontroller")
-                        CustomButton(name: "linear equations", width: 150, height: 100, img: "gamecontroller")
-                        CustomButton(name: "linear equations", width: 150, height: 100, img: "gamecontroller")
+                        CustomButton(name: "Liner Equation", width: 110, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
+                        CustomButton(name: "Liner Equation", width: 110, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
+                        CustomButton(name: "Liner Equation", width: 110, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
+                        CustomButton(name: "Liner Equation", width: 110, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
                     }
                 }
                 .padding()
                 ScrollView(.horizontal){
                     HStack(spacing: 15) {
-                        CustomButton(name: "linear equations", width: 150, height: 100, img: "studentdesk")
-                        CustomButton(name: "linear equations", width: 150, height: 100, img: "studentdesk")
-                        CustomButton(name: "linear equations", width: 150, height: 100, img: "studentdesk")
-                        CustomButton(name: "linear equations", width: 150, height: 100, img: "studentdesk")
-                        CustomButton(name: "linear equations", width: 150, height: 100, img: "studentdesk")
+                        CustomButton(name: "Liner Eqiution", width: 100, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
+                        CustomButton(name: "Liner Eqiution", width: 100, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
+                        CustomButton(name: "Liner Eqiution", width: 100, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
+                        CustomButton(name: "Liner Eqiution", width: 100, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
+                        CustomButton(name: "Liner Eqiution", width: 100, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
+                        CustomButton(name: "Liner Eqiution", width: 100, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
+                        CustomButton(name: "Liner Eqiution", width: 100, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
                     }
                 }
                 .padding()
