@@ -12,8 +12,6 @@ struct Student: Identifiable {
     var name: String
     var highScore: Int
 }
-
-
 struct CustomLeaderboard: View {
     @State var cname:String
     var studentlist: [Student]
