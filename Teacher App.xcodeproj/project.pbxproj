@@ -87,9 +87,9 @@
 				3DF59EC9274D64A900E56C9F /* CustomTextBox.swift */,
 				3D01566F273ED36300790E16 /* ContentView.swift */,
 				3DFF9D2C2742C77A00262FC2 /* CustomButton.swift */,
+				3DBA2B52275A8F6100D0B93F /* editGame.swift */,
 				3D97B37B275E6C310092344D /* LoginView.swift */,
 				3DF89F0E275A88650062247D /* gameScreen.swift */,
-				3DBA2B52275A8F6100D0B93F /* editGame.swift */,
 				3D6780F72746BEFB00C56B6D /* Leaderboard.swift */,
 			);
 			path = Views;
