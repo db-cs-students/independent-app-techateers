@@ -10,12 +10,8 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-<<<<<<< HEAD
-        Text("hey")
-=======
         Text("Hello world")
  
->>>>>>> main
     }
 }
  
