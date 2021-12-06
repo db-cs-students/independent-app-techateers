@@ -12,7 +12,6 @@ struct gameScreen: View {
         VStack {
             CustomButton(name: "Create New", width: 225, height: 85, color: .red, secondaryColor: .blue)
                 .padding()
-            CustomLeaderboard(cname:"A Block", studentlist: ["math","science","literacy","Mr. Bailey's class","Sleep time"])
         }
     }
 }
