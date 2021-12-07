@@ -14,20 +14,18 @@ struct HomeScreenView: View {
                 Text("Favorite Quizes")
                 ScrollView(.horizontal){
                     HStack(spacing: 10) {
-                        CustomButton(name: "Liner Equation alksdjflaksdjf", width: 110, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
-                        CustomButton(name: "Liner Equation", width: 110, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
-                        CustomButton(name: "Liner Equation", width: 110, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
-                        CustomButton(name: "Liner Equation", width: 110, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
+                        NavigationLink(
+                            destination: Text("hey"),
+                            label: {
+                                CustomButton(name: "Liner Equation", width: 110, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
+                            })
                     }
                 }
                     .padding()
                     Text("Classes")
                     ScrollView(.horizontal){
                         HStack(spacing: 10) {
-                            CustomButton(name: "Liner Eqiution", width: 100, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
-                            CustomButton(name: "Liner Eqiution", width: 100, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
-                            CustomButton(name: "Liner Eqiution", width: 100, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
-                            CustomButton(name: "Liner Eqiution", width: 100, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
+                            CustomButton(name: "Liner Equation", width: 110, height: 100, color: .yellow, secondaryColor: .blue, img: "gamecontroller")
                         }
                     }
                     .padding()
