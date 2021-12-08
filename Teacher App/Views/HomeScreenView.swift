@@ -33,7 +33,11 @@ struct HomeScreenView: View {
                     Text("Classes")
                     ScrollView(.horizontal){
                         HStack(spacing: 10) {
-                            CustomButton(name: "Add Class", width: 110, height: 100, color: .yellow, secondaryColor: .blue, img: "plus")
+                            NavigationLink(
+                                destination: Text("hey"),
+                                label: {
+                                    CustomButton(name: "Add Class", width: 110, height: 100, color: .yellow, secondaryColor: .blue, img: "plus")
+                                })
                         }
                     }
                     .padding()
