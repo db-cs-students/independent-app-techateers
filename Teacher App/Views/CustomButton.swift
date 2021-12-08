@@ -50,6 +50,7 @@ struct CustomButton: View {
                         Image(systemName: img)
                     }
                 }
+                .padding(.bottom, 1)
                 Text(name)
                     .padding(.horizontal, 10.0)
                     .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
