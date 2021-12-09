@@ -45,15 +45,6 @@ struct HomeScreenView: View {
         }
     }
 }
-struct Games: Identifiable {
-    var id = UUID()
-    var name: String
-}
-struct Classes: Identifiable {
-    var id = UUID()
-    var roll: [Student]
-    var nav: String
-}
 struct HomeScreenView_Previews: PreviewProvider {
     static let students: [Student] = [
        Student(name: "Ablock", highScore: 2000),
