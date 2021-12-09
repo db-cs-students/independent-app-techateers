@@ -4,7 +4,6 @@
 //
 //  Created by Sam L on 12/1/21.
 //
-
 import SwiftUI
 struct HomeScreenView: View {
     var students : [Student]
@@ -50,13 +49,10 @@ struct Games: Identifiable {
     var id = UUID()
     var name: String
 }
-
 struct Classes: Identifiable {
     var id = UUID()
     var roll: [Student]
     var nav: String
-    
-    
 }
 struct HomeScreenView_Previews: PreviewProvider {
     static let students: [Student] = [
