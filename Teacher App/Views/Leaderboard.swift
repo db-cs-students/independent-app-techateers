@@ -37,7 +37,7 @@ struct CustomLeaderboard: View {
                         
                         .frame(width: 250, height: 40, alignment: .center)
                     }
-                }
+                }.padding(.top)
             }
         }
     }

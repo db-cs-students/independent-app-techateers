@@ -17,7 +17,6 @@ struct CustomButton: View {
     let color: Color
     let secondaryColor: Color
     let img: String
-    
     init(name: String, width: CGFloat, height: CGFloat, color: Color, secondaryColor: Color) {
         self.name = name
         self.width = width
@@ -35,28 +34,33 @@ struct CustomButton: View {
         self.height = height
         self.img = img
     }
-
+    
     var body: some View {
-        Button(action: {}) {
-            ZStack {
-                RoundedRectangle(cornerRadius: 4, style: .continuous)
-                    .frame(width: width + 5, height: height + 5, alignment: .center)
-                    .foregroundColor(secondaryColor)
-                RoundedRectangle(cornerRadius: 4, style: .continuous)
-                    .frame(width: width, height: height, alignment: .center)
-                    .foregroundColor(color)
-                VStack {
-                    Group {
-                        if img.isEmpty {
-                            EmptyView()
-                        } else {
-                            Image(systemName: img)
-                        }
+        ZStack {
+            RoundedRectangle(cornerRadius: 4, style: .continuous)
+                .foregroundColor(secondaryColor)
+            RoundedRectangle(cornerRadius: 4, style: .continuous)
+                .frame(width: width, height: height, alignment: .center)
+                .foregroundColor(color)
+            VStack {
+                Group {
+                    if img.isEmpty {
+                        EmptyView()
+                    } else {
+                        Image(systemName: img)
                     }
-                    Text(name)
-                }.foregroundColor(secondaryColor)
+                }
+                .padding(.bottom, 1)
+                Text(name)
+                    .padding(.horizontal, 10.0)
+                    .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
+                    .multilineTextAlignment(.center)
             }
+            .foregroundColor(secondaryColor)
+            
+            
         }
+        .frame(width: width + 5, height: height + 5, alignment: .center)
     }
 }
 
