@@ -6,8 +6,8 @@
 //
 import SwiftUI
 struct HomeScreenView: View {
-    var students : [Student]
-    var games: [Games]
+    @EnvironmentObject var data: Data
+    
     var body: some View {
         NavigationView {
             VStack{
@@ -19,7 +19,7 @@ struct HomeScreenView: View {
                             label: {
                                 CustomButton(name: "Add Game", width: 110, height: 100, color: .yellow, secondaryColor: .blue, img: "plus")
                             })
-                        ForEach(games) { game in
+                        ForEach(data.games) { game in
                             NavigationLink(
                                 destination: Text(game.name),
                                 label: {
@@ -40,26 +40,15 @@ struct HomeScreenView: View {
                         }
                     }
                     .padding()
-                CustomLeaderboard(cname: "ABlock", studentlist: students)
+                CustomLeaderboard(cname: data.courses[0].name, studentlist: data.courses[0].roll)
             }
         }
     }
 }
 struct HomeScreenView_Previews: PreviewProvider {
-    static let students: [Student] = [
-       Student(name: "Ablock", highScore: 2000),
-       Student(name: "Bailey", highScore: 100000000000000),
-       Student(name: "Sam", highScore: 1)
-   ].sorted(by: {$0.highScore > $1.highScore})
-    
-    static let games: [Games] = [
-        Games(name: "Hey"),
-        Games(name: "Bob"),
-        Games(name: "Jim"),
-    ]
-    
     static var previews: some View {
-        HomeScreenView(students: students, games: games)
+        HomeScreenView()
+            .environmentObject(Data())
     }
 }
 
