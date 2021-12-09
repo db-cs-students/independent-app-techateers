@@ -10,4 +10,7 @@ In the beginning it will load you onto a login screen to and you have to type in
 You will need to create a class or multiple depending on how many you have.  Then it will load you a leaderboard with everyones name and points.  Once you start making the tests and they use them they will gain points and move farther up.
 You can also go to a create game screen so that you can make you own tests and quizes.  This helps you put in your stuff for your class so they can learn it. 
 
-#### 
+#### About the app. 
+The app is mostly used for teachers to help there kids work in class and keep them focused. It is also for the kids to have something to study in class and outside of class that will help them keep studying.  There are screens that allow you to create the games, the leaderboards, and the classes for the app.
+
+beans and rice 
