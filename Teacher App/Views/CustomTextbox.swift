@@ -3,11 +3,11 @@
 //  Teacher App
 //
 //  Created by Cameron M on 11/17/21.
-//
+///Users/cblock/Dev/independent-app-techateers/CustomTextBox.swift
 
 import SwiftUI
 
-struct CustomTextbox: View {
+struct Wrong: View {
     @State var text: String
     
     var body: some View {
@@ -22,8 +22,8 @@ struct CustomTextbox: View {
     }
 }
 
-struct CustomTextbox_Previews: PreviewProvider {
+struct Wrong_Previews: PreviewProvider {
     static var previews: some View {
-        CustomTextbox(text: "")
+        Wrong(text: "")
     }
 }
