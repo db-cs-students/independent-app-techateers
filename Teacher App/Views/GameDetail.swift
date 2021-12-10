@@ -29,24 +29,24 @@ struct GameDetail: View {
             VStack {
                 ZStack {
                     Rectangle()
-                        .fill(Color.gray)
+                        .fill(Color("LightBlue"))
                         .frame(width: 1000, height: 500)
+                        .border(Color.black, width: 1)
                     HStack {
                         Text("Number of players: 22")
                             .underline()
                             .font(.system(size: 30))
-                            .padding(.trailing, 125)
+                            .padding(.top, 20)
                             .padding(.bottom, 450)
                     }
                     HStack {
                         Text("Player List")
                             .font(.system(size: 30))
-                            .padding(.trailing, 275)
+                            .padding(.top, 20)
                             .padding(.bottom, 375)
                     }
                     CustomLeaderboard(cname: "", studentlist: GameDetail.students)
                         .padding(.top, 120)
-                        .padding(.trailing, 150)
                 }
                 
                 
