@@ -13,4 +13,5 @@ You can also go to a create game screen so that you can make you own tests and q
 #### About the app. 
 The app is mostly used for teachers to help there kids work in class and keep them focused. It is also for the kids to have something to study in class and outside of class that will help them keep studying.  There are screens that allow you to create the games, the leaderboards, and the classes for the app.
 
+We found all of the little photo art and background images from this really useful site. https://icons8.com/illustrations/style--bonbon-line.
 
